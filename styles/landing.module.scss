@@ -1,0 +1,21 @@
+@import "variables.module";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center; // Center text alignment
+  font-size: 84px; // Font size as specified
+  margin-top: 2em; // Space from the top
+}
+
+.buttons {
+  display: flex;
+  justify-content: center; // Center buttons horizontally
+  margin-top: 0.5em; // Space between text and buttons
+}
+
+.login-button {
+  background-color: $primary; // Use the primary color defined in variables
+}
