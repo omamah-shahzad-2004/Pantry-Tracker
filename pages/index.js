@@ -18,13 +18,12 @@
 import { useEffect, useState } from 'react';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
-import { EmailAuthProvider, GoogleAuthProvider, TwitterAuthProvider } from 'firebase/auth';
+import { EmailAuthProvider, GoogleAuthProvider } from 'firebase/auth';
 import { Button, CircularProgress, Container, Dialog, Typography } from '@mui/material';
 import { auth } from '../firebase/firebase';
 import styles from '../styles/landing.module.scss';
 import StyledFirebaseAuth from 'react-firebaseui/StyledFirebaseAuth';
 import { useAuth } from '../firebase/auth';
-import { FacebookAuthProvider } from 'firebase/auth/web-extension';
 
 const REDIRECT_PAGE = '/dashboard';
 
@@ -36,8 +35,6 @@ const uiConfig = {
     //can be Google, Facebook, Twitter, Github, email/password, e.t.c.
     EmailAuthProvider.PROVIDER_ID,
     GoogleAuthProvider.PROVIDER_ID,
-    FacebookAuthProvider.PROVIDER_ID,
-    TwitterAuthProvider.PROVIDER_ID,
   ]
 }
 
